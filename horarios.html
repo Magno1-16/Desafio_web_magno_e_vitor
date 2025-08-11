@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Horários Disponíveis</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Horários Disponíveis</h1>
+<p id="servicoSelecionado"></p>
+<div class="horarios">
+<button onclick="selecionarHorario('09:00')">09:00</button>
+<button onclick="selecionarHorario('10:00')">10:00</button>
+<button onclick="selecionarHorario('11:00')">11:00</button>
+<button onclick="selecionarHorario('14:00')">14:00</button>
+<button onclick="selecionarHorario('15:00')">15:00</button>
+</div>
+</div>
+ 
+  <script>
+    const servico = localStorage.getItem('servicoEscolhido');
+    document.getElementById('servicoSelecionado').textContent = "Serviço selecionado: " + null;
+ 
+    function selecionarHorario(horario) {
+      localStorage.setItem('horarioEscolhido', horario);
+      window.location.href = 'agendamento.html';
+    }
+</script>
+
+<div class="voltar">
+    <a href="pag.js"><button class="btn">Retorne a Pagina Principal</button></a>
+</div>
+</body>
+</html> 

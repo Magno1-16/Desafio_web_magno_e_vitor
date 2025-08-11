@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Barbearia Top Style</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Barbearia do Seu Zé</h1>
+<p>Bem-vindo à melhor barbearia da cidade, onde você encontra o corte perfeito para você e que faça você se sentir mais confiante e feliz. 
+    Confira a baixo nossos serviços e nossos horarios disponiveis</p>
+<h2>Escolha um serviço:</h2>
+<button onclick="escolherServico('Corte de Cabelo')">Corte de Cabelo</button>
+<button onclick="escolherServico('Barba')">Barba</button>
+
+
+
+<button onclick="escolherServico('Corte + Barba')">Corte + Barba</button>
+
+<table border="1px" align="center">
+    <caption>TABELA DE VALORES</caption>
+<thead>
+    <tr>
+        <th>Corte Masculino</th>
+        <th>Barba</th>
+
+
+        <th>Corte + Barba</th>
+
+
+
+
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>$40,00</td>
+        <td>$13,00</td>
+        <td>$53,00</td>
+    </tr>
+</tbody>
+</table>
+
+
+</div>
+
+  <script>
+    function escolherServico(servico) {
+
+
+
+      localStorage.setItem('servicoEscolhido', servico);
+      window.location.href = 'horarios.html';
+    }
+</script>
+</body>
+</html>

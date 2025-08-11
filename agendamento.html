@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Agendamento</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Agendamento</h1>
+<p id="detalhesAgendamento"></p>
+ 
+    <form onsubmit="return agendar()">
+<input type="text" id="nome" placeholder="Nome completo" required>
+<input type="email" id="email" placeholder="E-mail" required>
+<input type="tel" id="telefone" placeholder="Telefone" required>
+<input type="text" id="cpf" placeholder="CPF" required>
+<button type="submit">Agendar</button>
+</form>
+</div>
+ 
+  
+<div class="voltar">
+  <a href="horarios.html"><button class="btn2">Retorne a Pagina Anterior</button></a>
+</div>
+<div class="videos">
+<video src="video/4177794-hd_1920_1080_30fps.mp4" width="500px" height="400px" controls></video>
+</div>
+<script src="pag.js"></script>
+</body>
+</html>
