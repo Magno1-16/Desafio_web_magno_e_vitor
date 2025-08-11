@@ -9,11 +9,11 @@
 6- Navegar entre páginas com armazenamento local do serviço e horário selecionados <br>
 7- Exibir vídeo na página de agendamento <br>
 
-**Melhorias:**
+**Melhorias:** <br>
 1- Evitar recarregamento da página após o agendamento <br>
 2- Corrigir armazenamento e exibição correta do serviço selecionado ao voltar <br>
 3- Organizar e modularizar o código JavaScript <br>
 4- Validar os dados do formulário antes do envio <br>
 
-**Nova Regra:**
+**Nova Regra:** <br>
 Permitir agendamento somente em horários comerciais (das 09:00 às 18:00)
